@@ -1,0 +1,120 @@
+/* Global page layout */
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  margin: 0;
+}
+
+.page {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+/* Homepage-specific styles */
+h1 {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.tagline {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #555555;
+  font-size: 15px;
+}
+
+.year {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.post-date {
+  color: #777777;
+  margin-right: 8px;
+}
+
+/* Links */
+a {
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom-color: #111111;
+}
+
+/* Post page styles */
+header {
+  margin-bottom: 32px;
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.site-title a {
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.site-title a:hover {
+  border-bottom-color: #111111;
+}
+
+.post-title {
+  font-size: 28px;
+  margin: 16px 0 4px 0;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 24px;
+}
+
+.post-body p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+}
+
+.post-body strong {
+  font-weight: 600;
+}
+
+.back-link {
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+.back-link a {
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.back-link a:hover {
+  border-bottom-color: #111111;
+}
