@@ -51,7 +51,7 @@ h1 {
   margin-right: 8px;
 }
 
-/* Links */
+/* Links: single bottom border on hover, no text-decoration */
 a {
   color: #111111;
   text-decoration: none;
@@ -84,8 +84,8 @@ header {
 }
 
 .post-title {
-  font-size: 28px;
-  margin: 16px 0 4px 0;
+  font-size: 34px;
+  margin: 20px 0 8px 0;
 }
 
 .post-meta {
@@ -118,6 +118,7 @@ header {
 .back-link a:hover {
   border-bottom-color: #111111;
 }
+
 /* ========== Post layout ========== */
 
 .post {
@@ -137,7 +138,7 @@ header {
 
 /* Featured image (hero) */
 .post-hero {
-  margin: 0 0 24px 0;
+   margin: -8px 0 30px 0;   /* was 0 0 24px 0 */
 }
 
 .post-hero img {
@@ -208,7 +209,7 @@ header {
   border-top: 1px solid #eeeeee;
 }
 
-/* Social buttons row */
+/* Social profile button */
 .post-social-button {
   display: inline-block;
   font-size: 13px;
@@ -288,6 +289,7 @@ header {
 .comment-form button:hover {
   background-color: #333333;
 }
+
 /* ========== Home card grid ========== */
 
 .home-header {
@@ -298,6 +300,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+  direction: rtl;          /* reverse visual order */
 }
 
 /* Card */
@@ -307,6 +310,7 @@ header {
   overflow: hidden;
   background-color: #ffffff;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  direction: ltr;          /* keep text inside cards normal */
 }
 
 .post-card-link {
@@ -316,7 +320,7 @@ header {
 }
 
 .post-card-image {
-  width: 100%;
+  width: 96%;
   height: 90px;
   object-fit: cover;
 }
@@ -355,3 +359,99 @@ header {
   }
 }
 
+/* ========== Post header with avatar & X button ========== */
+
+.post-header {
+  margin-bottom: 16px;
+}
+
+.post-subtitle {
+  margin: 6px 0 14px 0;
+  font-size: 20px;
+  color: #555555;
+}
+
+
+.post-author-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:8px;
+  gap: 16px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-author-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.post-author-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-author-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post-author-date {
+  font-size: 13px;
+  color: #777777;
+}
+
+.post-x-button {
+  display: inline-block;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #111111;
+  background-color: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.post-x-button:hover {
+  background-color: #333333;
+}
+
+/* ========== Breadcrumbs ========== */
+
+.breadcrumbs {
+  font-size: 13px;
+  color: #777777;
+  margin-bottom: 38px;
+}
+
+.breadcrumbs a {
+  color: #777777;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs a:hover {
+  border-bottom-color: #777777;
+}
+
+.breadcrumbs-separator {
+  margin: 0 4px;
+}
+
+.breadcrumbs-current {
+  color: #111111;
+}
+
+.post-subtitle {
+  margin: 18px 0 40px 0;  /* more space above & below subtitle */
+  font-size: 20px;
+  color: #555555;
+}
